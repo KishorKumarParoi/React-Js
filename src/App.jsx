@@ -1,10 +1,19 @@
+import Demo from '../Demo';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
 
-function App() {
-  return (
-    <>
-      <h1>React Latest</h1>
-    </>
-  );
-}
+const App = () => {
+    return (
+        <div>
+            <Demo/>
+            <Header/>
+            <Hero/>
+            <ContactForm/>
+            <Footer/>
+        </div>
+    );
+};
 
 export default App;
