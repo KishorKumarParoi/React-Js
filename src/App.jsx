@@ -1,4 +1,4 @@
-import Demo from '../Demo';
+import Demo from './components/Demo';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import ContactForm from './components/ContactForm';
