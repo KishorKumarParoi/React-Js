@@ -1,3 +1,4 @@
+import { useRef } from "react";
 
 const contactForm = () => {
     const loginStatus = (status) => {
@@ -12,6 +13,15 @@ const contactForm = () => {
         event.preventDefault();
         alert('You Sent Your Name to Server')
     }
+
+    let inputVal = useRef();
+    let Name = useRef();
+
+    const change = () => {
+        // Name.current.innerText = document.getElementById('name').value;
+        Name.innerText = inputVal.current.value;
+    }
+
     return (
         <div>
             <input type="text" />
@@ -20,12 +30,15 @@ const contactForm = () => {
                 loginStatus(false)
             }
             <form action="" onSubmit={postFormData}>
-                <p>Enter Your Name : <input type="text" />
+                <p>Enter Your Name : <input type="text" id="name" ref={inputVal} />
                     <button style={{
                         marginLeft: "10px"
-                    }} >Send</button>
+                    }} onClick={change} >Send</button>
                 </p>
             </form>
+
+            <p ref={(p) => Name = p}></p>
+
         </div>
     );
 };
