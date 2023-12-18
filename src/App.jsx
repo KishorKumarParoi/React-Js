@@ -1,3 +1,4 @@
+import CssStyle from "./components/CssStyle.jsx";
 import Demo from "./components/Demo";
 import Forms from "./components/Forms.jsx";
 import Header from "./components/Header";
@@ -28,6 +29,7 @@ const App = () => {
         <h1>My App</h1>
         <p>This is my app</p>
         <Forms/>
+        <CssStyle/>
         <Fragment>
           <p>{new Date().getMinutes()}</p>
           <button onClick={() => alert("Hello World!")}>Click</button>
