@@ -1,5 +1,6 @@
 import CssStyle from "./components/CssStyle.jsx";
 import Demo from "./components/Demo";
+import FetchAndShowData from "./components/FetchAndShowData.jsx";
 import Forms from "./components/Forms.jsx";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -28,6 +29,7 @@ const App = () => {
       <div>
         <h1>My App</h1>
         <p>This is my app</p>
+        <FetchAndShowData/>
         <Forms/>
         <CssStyle/>
         <Fragment>

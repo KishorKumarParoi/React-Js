@@ -9,7 +9,7 @@ const CssStyle = () => {
         myHeadline.classList.remove('text-success');
         myHeadline.classList.add("text-danger");
         number.current++;
-        console.log(number);
+        console.log(number.current);
     };
 
     return (
