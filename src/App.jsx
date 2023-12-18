@@ -4,6 +4,7 @@ import FetchAndShowData from "./components/FetchAndShowData.jsx";
 import Forms from "./components/Forms.jsx";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Todo from "./components/Todo.jsx";
 import UseState from "./components/UseState.jsx";
 import ContactForm from "./components/contactForm.jsx";
 import Footer from "./components/footer.jsx"
@@ -23,6 +24,7 @@ const App = () => {
 
   return (
     <div>
+      <Todo/>
       <Demo />
       <Header childBtnClick={btnClick} item={personObj} title="Practicing React Js" des="Learning React from documentation" />
       <ContactForm />
@@ -40,11 +42,11 @@ const App = () => {
 
           <div>
             {(() => {
-              let x = 10;
-              let y = 20;
-              let z = x + y;
-              console.log(z);
-              console.log("kkp");
+              // let x = 10;
+              // let y = 20;
+              // let z = x + y;
+              // console.log(z);
+              // console.log("kkp");
             })()}
           </div>
 
