@@ -4,6 +4,7 @@ import FetchAndShowData from "./components/FetchAndShowData.jsx";
 import Forms from "./components/Forms.jsx";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import UseState from "./components/UseState.jsx";
 import ContactForm from "./components/contactForm.jsx";
 import Footer from "./components/footer.jsx"
 import { Fragment } from "react";
@@ -29,6 +30,7 @@ const App = () => {
       <div>
         <h1>My App</h1>
         <p>This is my app</p>
+        <UseState/>
         <FetchAndShowData/>
         <Forms/>
         <CssStyle/>
