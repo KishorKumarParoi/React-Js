@@ -1,6 +1,7 @@
 import CssStyle from "./components/CssStyle.jsx";
 import Demo from "./components/Demo";
 import FetchAndShowData from "./components/FetchAndShowData.jsx";
+import Form from "./components/Form.jsx";
 import Forms from "./components/Forms.jsx";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -24,6 +25,7 @@ const App = () => {
 
   return (
     <div>
+      <Form/>
       <Todo/>
       <Demo />
       <Header childBtnClick={btnClick} item={personObj} title="Practicing React Js" des="Learning React from documentation" />
