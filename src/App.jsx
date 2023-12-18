@@ -1,4 +1,5 @@
 import Demo from "./components/Demo";
+import Forms from "./components/Forms.jsx";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import ContactForm from "./components/contactForm.jsx";
@@ -26,6 +27,7 @@ const App = () => {
       <div>
         <h1>My App</h1>
         <p>This is my app</p>
+        <Forms/>
         <Fragment>
           <p>{new Date().getMinutes()}</p>
           <button onClick={() => alert("Hello World!")}>Click</button>

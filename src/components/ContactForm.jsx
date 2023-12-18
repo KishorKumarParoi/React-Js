@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { useRef } from "react";
 
 const contactForm = () => {
@@ -24,12 +25,10 @@ const contactForm = () => {
 
     return (
         <div>
-            <input type="text" />
-            <button>Submit</button> <br />
             {
                 loginStatus(false)
             }
-            <form action="" onSubmit={postFormData}>
+            <form action="" onSubmit={postFormData} >
                 <p>Enter Your Name : <input type="text" id="name" ref={inputVal} />
                     <button style={{
                         marginLeft: "10px"
