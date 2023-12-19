@@ -10,6 +10,7 @@ import UseState from "./components/UseState.jsx";
 import ContactForm from "./components/contactForm.jsx";
 import Footer from "./components/footer.jsx"
 import { Fragment } from "react";
+import UseEffect from "./components/useEffect.jsx";
 
 const App = () => {
   let marks = 89;
@@ -25,6 +26,7 @@ const App = () => {
 
   return (
     <div>
+      <UseEffect/>
       <Form/>
       <Todo/>
       <Demo />
