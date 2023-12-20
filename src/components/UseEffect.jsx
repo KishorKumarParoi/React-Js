@@ -1,10 +1,16 @@
+import { useEffect, useState, useRef } from "react";
 
-const useEffect = () => {
+const UseEffect = () => {
+
+    useEffect(()=>{
+        console.log('Hello KKP!')
+    }, [2, 5,7,8]);
+
     return (
         <div>
-            <h1>Learning useEffect</h1>
+
         </div>
     );
 };
 
-export default useEffect;
+export default UseEffect;
