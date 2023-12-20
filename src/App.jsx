@@ -26,8 +26,8 @@ const App = () => {
 
   return (
     <div>
-      <UseEffect/>
       <Form/>
+      <UseEffect/>
       <Todo/>
       <Demo />
       <Header childBtnClick={btnClick} item={personObj} title="Practicing React Js" des="Learning React from documentation" />

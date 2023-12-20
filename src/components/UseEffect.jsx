@@ -2,13 +2,21 @@ import { useEffect, useState, useRef } from "react";
 
 const UseEffect = () => {
 
-    useEffect(()=>{
-        console.log('Hello KKP!')
-    }, [2, 5,7,8]);
+    const [Data, SetData] = useState([]);
+
+    useEffect(() => {
+        (
+            async () => {
+                let response = await fetch('https://dummyjson.com/products/3')
+                let data = await response.json();
+                SetData(data);
+            }
+        )();
+    }, [])
 
     return (
         <div>
-
+            {JSON.stringify(Data)}
         </div>
     );
 };
