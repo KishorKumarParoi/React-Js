@@ -3,7 +3,11 @@ import { useEffect, useState, useRef } from "react";
 const UseEffect = () => {
 
     const [Data, SetData] = useState([]);
+    const headline = useRef();
 
+    const change = () => {
+        headline.current.style.color = 'blue';
+    }
     useEffect(() => {
         (
             async () => {
@@ -17,6 +21,8 @@ const UseEffect = () => {
     return (
         <div>
             {JSON.stringify(Data)}
+            <h1 ref={headline}>I have to do hard work for Learning</h1>
+            <button onClick={change}>Click</button>
         </div>
     );
 };
