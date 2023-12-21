@@ -6,7 +6,7 @@ import Todo from "./components/Todo.jsx";
 import ContactForm from "./components/contactForm.jsx";
 import Footer from "./components/footer.jsx"
 import Menu from "./Menu.jsx";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import UseEffect from './components/useEffect';
 import NotFound from './components/NotFound';
 import Random from "./components/Random.jsx";
@@ -25,7 +25,7 @@ const App = () => {
     <div>
       <Header childBtnClick={btnClick} item={personObj} title="Practicing React Js" des="Learning React from documentation"></Header>
 
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Menu />} />
           <Route path="/effect" element={<UseEffect />} />
@@ -36,7 +36,7 @@ const App = () => {
           <Route path="/random" element={<Random/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Hero />
       <Footer />
     </div>
