@@ -24,6 +24,12 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
+    "tailwindcss": "^3.4.0",
     "vite": "^5.0.0"
-  }
+  },
+  "description": "I am learning React Js from React.dev documentation, Sumit vai and Rabbil Vai help. Thanks to these peoples. I am going to learn next-js after this, then AWS from Freecodecamp after that I will make 30 projects.",
+  "main": "vite.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

@@ -7,6 +7,7 @@ const Menu = () => {
             <div>
                 <ul>
                     <li><NavLink className={({ isActive }) => isActive ? "active-item" : "pending-item"} to="/">Home</NavLink></li>
+                    <li><NavLink className={({ isActive }) => isActive ? "active-item" : "pending-item"} to="/tailwind">Tailwind</NavLink></li>
                     <li><NavLink className={({ isActive }) => isActive ? "active-item" : "pending-item"} to="/effect">UseEffect</NavLink></li>
                     <li><NavLink className={({ isActive }) => isActive ? "active-item" : "pending-item"} to="/todo">Todo</NavLink></li>
                     <li><NavLink className={({ isActive }) => isActive ? "active-item" : "pending-item"} to="/form">Form</NavLink></li>

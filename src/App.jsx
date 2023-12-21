@@ -10,6 +10,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import UseEffect from './components/useEffect';
 import NotFound from './components/NotFound';
 import Random from "./components/Random.jsx";
+import TailwindCSS from "./components/TailwindCSS.jsx";
 
 const App = () => {
   let personObj = {
@@ -23,7 +24,6 @@ const App = () => {
   }
   return (
     <div>
-      <Header childBtnClick={btnClick} item={personObj} title="Practicing React Js" des="Learning React from documentation"></Header>
 
       <HashRouter>
         <Routes>
@@ -34,10 +34,12 @@ const App = () => {
           <Route path="/demo/:name/:Age/:JobRole" element={<Demo />} />
           <Route path="/contactForm" element={<ContactForm />} />
           <Route path="/random" element={<Random/>} />
+          <Route path="/tailwind" element={<TailwindCSS/>}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>
       <Hero />
+      <Header childBtnClick={btnClick} item={personObj} title="Practicing React Js" des="Learning React from documentation"></Header>
       <Footer />
     </div>
   );
