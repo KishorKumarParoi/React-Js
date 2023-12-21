@@ -31,7 +31,7 @@ const App = () => {
           <Route path="/effect" element={<UseEffect />} />
           <Route path="/todo" element={<Todo />} />
           <Route path="/form" element={<Form />} />
-          <Route path="/demo" element={<Demo />} />
+          <Route path="/demo/:name/:Age/:JobRole" element={<Demo />} />
           <Route path="/contactForm" element={<ContactForm />} />
           <Route path="/random" element={<Random/>} />
           <Route path="*" element={<NotFound />} />
