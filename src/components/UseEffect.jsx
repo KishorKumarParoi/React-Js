@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import Menu from "../Menu";
 
 const UseEffect = () => {
 
@@ -20,6 +21,7 @@ const UseEffect = () => {
 
     return (
         <div>
+            <Menu/>
             {JSON.stringify(Data)}
             <h1 ref={headline}>I have to do hard work for Learning</h1>
             <button onClick={change}>Click</button>

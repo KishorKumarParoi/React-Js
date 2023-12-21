@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useRef } from "react";
+import Menu from "../Menu";
 
 const contactForm = () => {
     const loginStatus = (status) => {
@@ -25,6 +26,7 @@ const contactForm = () => {
 
     return (
         <div>
+            <Menu/>
             {
                 loginStatus(false)
             }

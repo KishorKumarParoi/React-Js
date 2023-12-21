@@ -1,7 +1,10 @@
+import Menu from "../Menu";
+
 const Demo = () => {
   const fruits = ["Apple", "Banana", "Orange", "Mango"];
   return (
     <div>
+      <Menu/>
       <h1>Kung Fu Panda is learning React Js</h1>
       <ul
       style={

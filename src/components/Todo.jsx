@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Menu from "../Menu";
 
 const Todo = () => {
 
@@ -16,6 +17,7 @@ const Todo = () => {
     }
     return (
         <div>
+            <Menu/>
             <input onChange={(e) => setItem(e.target.value)} type="text" placeholder="Item" />
             <button onClick={addToList}>Add</button>
             <table>
