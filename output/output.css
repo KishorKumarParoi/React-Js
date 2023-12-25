@@ -557,6 +557,10 @@ video {
   margin-right: auto;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -812,6 +816,15 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+/* group utilities */
+
+.collor {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 .hover\:scale-105:hover {

@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* group utilities */
+@layer utilities {
+    .collor {
+        @apply bg-sky-500 text-red-700;
+    }
+
+    .btn {
+        @apply text-sm border-2 border-purple-300 p-2 px-4 rounded-full text-purple-600 font-medium transition hover: bg-purple-600 hover:scale-105 duration-500 hover:text-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-900 dark:bg-gray-300
+    }
+}
