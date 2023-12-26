@@ -3,12 +3,22 @@
 @tailwind utilities;
 
 /* group utilities */
-@layer utilities {
-    .collor {
-        @apply bg-sky-500 text-red-700;
-    }
+.collor {
+    @apply bg-sky-500 text-red-700;
+}
 
-    .btn {
-        @apply text-sm border-2 border-purple-300 p-2 px-4 rounded-full text-purple-600 font-medium transition hover: bg-purple-600 hover:scale-105 duration-500 hover:text-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-900 dark:bg-gray-300
-    }
+.btn{
+    @apply px-4 py-2 border rounded-full 
+    text-sm font-semibold focus:outline-none
+    border-purple-400
+    bg-gray-300
+    focus:ring-2 focus:ring-offset-2
+    transition
+    hover:text-white hover:border-transparent
+    duration-500
+    hover:bg-blue-800
+    focus:text-white
+    focus:bg-purple-800
+    dark:focus:ring-offset-green-800 
+    dark:focus:border-transparent;
 }
