@@ -30,7 +30,7 @@
 
 @layer utilities {
     .text-body {
-        @apply text-7xl;
+        @apply text-xl;
     }
 }
 
