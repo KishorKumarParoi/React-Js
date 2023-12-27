@@ -4,17 +4,21 @@
 
 /* group utilities */
 .collor {
-  @apply bg-sky-500 text-red-700;
+    @apply bg-sky-500 text-red-700;
 }
 
 .btn {
-  @apply text-sm border-2 p-2 px-4 rounded-full font-medium transition hover:scale-105 duration-500 hover:text-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 dark:bg-gray-300;
+    @apply text-sm border-2 p-2 px-4 rounded-full font-medium transition hover:scale-105 duration-500 hover:text-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 dark:bg-gray-300;
 }
 
 .btn-purple {
-  @apply border-purple-300 text-purple-600 hover:bg-purple-600 focus:ring-purple-900;
+    @apply border-purple-300 text-purple-600 hover:bg-purple-600 focus:ring-purple-900;
 }
 
 .btn-green {
-  @apply border-green-300 text-purple-600 hover:bg-green-600 focus:ring-green-900;
+    @apply border-green-300 text-purple-600 hover:bg-green-600 focus:ring-green-900;
+}
+
+.btn-sky {
+    @apply border-sky-300 text-purple-600 hover:bg-sky-600 focus:ring-sky-900;
 }

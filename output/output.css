@@ -866,6 +866,23 @@ video {
   --tw-ring-color: rgb(20 83 45 / var(--tw-ring-opacity));
 }
 
+.btn-sky {
+  --tw-border-opacity: 1;
+  border-color: rgb(125 211 252 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(147 51 234 / var(--tw-text-opacity));
+}
+
+.btn-sky:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+}
+
+.btn-sky:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(12 74 110 / var(--tw-ring-opacity));
+}
+
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
