@@ -690,6 +690,14 @@ h1 {
   aspect-ratio: 1 / 1;
 }
 
+.aspect-\[3\/2\] {
+  aspect-ratio: 3/2;
+}
+
+.aspect-\[3\/5\] {
+  aspect-ratio: 3/5;
+}
+
 .h-12 {
   height: 3rem;
 }
@@ -861,6 +869,11 @@ h1 {
 .bg-orange-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-4 {
