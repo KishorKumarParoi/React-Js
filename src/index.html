@@ -29,7 +29,7 @@
     </div>
   </div>
 
-  <div class="p-6 bg-green-300 shadow-2xl rounded-2xl max-w-sm mx-auto flex items-center space-x-10">
+  <div class="p-6 bg-green-300 shadow-lg rounded-2xl max-w-sm mx-auto flex items-center space-x-10">
     <div class="shrink-1">
       <i class="fa-brands fa-rocketchat fa-2xl p-6 h-12 w-12"></i>
     </div>
@@ -41,7 +41,8 @@
 
   <div
     class="w-full mt-10 text-xl text-orange-600 first-letter:text-4xl first-letter:text-blue-600 selection:text-yellow-400">
-    <p class="ssm:text-ellipsis p-2 dark:md:hover:text-yellow-500">Lorem ipsum dolor sit amet consectetur, adipisicing
+    <p class="ssm:text-ellipsis p-2 dark:md:hover:text-yellow-500 print:text-black print:text-justify ">Lorem ipsum
+      dolor sit amet consectetur, adipisicing
       elit. Velit vel numquam sequi ab ipsam consequatur veniam commodi, sed quisquam illum deserunt vero exercitationem
       tempora sint saepe. Harum quasi reprehenderit nisi!</p>
   </div>
@@ -51,10 +52,15 @@
   </div>
 
   <div class="mt-10 space-y-4">
-    <div class="shadow-lg text-white w-24 bg-yellow-500 m-2 p-1 rounded-full text-center shadow-red-500/50">Subscribe</div>
+    <div class="shadow-lg text-white w-24 bg-yellow-500 m-2 p-1 rounded-full text-center shadow-red-500/50">Subscribe
+    </div>
     <div class="shadow-lg text-white bg-blue-500 shadow-purple-400 w-24 m-2 p-1 rounded-full text-center">Like</div>
     <div class="shadow-lg text-white m-2 rounded-full bg-orange-600 w-24 text-center shadow-slate-200/20">Comment</div>
   </div>
+
+  <p class="mt-6 text-right print:hidden text-white mr-2">
+    <button onclick=" window.print()" class="bg-yellow-500 text-2xl p-2 rounded-full w-24">Print</button>
+  </p>
 
   <section class="h-dvh w-dvh flex items-center justify-center ">
     <div class="max-h-dvh max-w-xs mx-auto p-6 bg-white-900 rounded-2xl shadow-lg
@@ -75,7 +81,8 @@
       </div>
     </div>
   </section>
-  </div>
+
+
 
 </body>
 
