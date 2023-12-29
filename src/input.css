@@ -18,6 +18,9 @@
     .btn-sky {
         @apply border-sky-300 text-purple-600 hover:bg-sky-600 focus:ring-sky-900;
     }
+    .btn-red {
+        @apply border-red-300 text-purple-600 hover:bg-red-600 focus:ring-red-900;
+    }
 }
 
 @layer base {

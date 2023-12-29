@@ -3,14 +3,13 @@
 // import {defaultTheme} from "tailwindcss";
 
 export default {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/*.{html,js}"],
   mode: "jit",
-  darkMode: "media",
   theme: {
-    fontFamily: {
-      'sans': ["Roboto"]
-    },
     extend: {
+      fontFamily: {
+        'sans': ["Roboto"]
+      },
       screens: {
         'ssm': '540px',
         'llg': '1000px',
