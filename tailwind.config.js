@@ -3,7 +3,7 @@
 // import {defaultTheme} from "tailwindcss";
 
 export default {
-  content: ["./src/*.{html,js}"],
+  content: ["./src/*.{html,js,ts,jsx,tsx}", "./src/**/*.{html,js,ts,jsx,tsx}"],
   mode: "jit",
   theme: {
     extend: {

@@ -11,6 +11,7 @@ import UseEffect from './components/useEffect';
 import NotFound from './components/NotFound';
 import Random from "./components/Random.jsx";
 import TailwindCSS from "./components/TailwindCSS.jsx";
+import Button from "./components/button.jsx";
 
 const App = () => {
   let personObj = {
@@ -24,6 +25,8 @@ const App = () => {
   }
   return (
     <div>
+      <h1 className="text-2xl">Hello KKP</h1>
+      <Button className="bg-green-500" />
 
       <HashRouter>
         <Routes>
@@ -33,8 +36,8 @@ const App = () => {
           <Route path="/form" element={<Form />} />
           <Route path="/demo/:name/:Age/:JobRole" element={<Demo />} />
           <Route path="/contactForm" element={<ContactForm />} />
-          <Route path="/random" element={<Random/>} />
-          <Route path="/tailwind" element={<TailwindCSS/>}/>
+          <Route path="/random" element={<Random />} />
+          <Route path="/tailwind" element={<TailwindCSS />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>
