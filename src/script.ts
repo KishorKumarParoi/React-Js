@@ -55,3 +55,30 @@ console.log(
     age: 24,
   })
 );
+
+// class 
+
+class Player {
+    name : string;
+    age : number;
+    country : string;
+
+    constructor(n : string, a : number, c : string){
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+
+    play(){
+        console.log(`${this.name} is playing at age ${this.age} from ${this.country}`);
+    }
+}
+
+const mashrafi = new Player('Mashrafi', 30, "Bangladesh");
+const sakib = new Player('Sakib', 28, "Bangladesh");
+console.log(mashrafi);
+mashrafi.play();
+
+const players:Player[] = [];
+players.push(sakib, mashrafi);
+console.log(players);
