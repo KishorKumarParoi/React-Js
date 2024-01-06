@@ -56,29 +56,48 @@ console.log(
   })
 );
 
-// class 
+// class
 
 class Player {
-    name : string;
-    age : number;
-    country : string;
+  name: string;
+  age: number;
+  country: string;
 
-    constructor(n : string, a : number, c : string){
-        this.name = n;
-        this.age = a;
-        this.country = c;
-    }
+  constructor(n: string, a: number, c: string) {
+    this.name = n;
+    this.age = a;
+    this.country = c;
+  }
 
-    play(){
-        console.log(`${this.name} is playing at age ${this.age} from ${this.country}`);
-    }
+  play() {
+    console.log(
+      `${this.name} is playing at age ${this.age} from ${this.country}`
+    );
+  }
 }
 
-const mashrafi = new Player('Mashrafi', 30, "Bangladesh");
-const sakib = new Player('Sakib', 28, "Bangladesh");
+const mashrafi = new Player("Mashrafi", 30, "Bangladesh");
+const sakib = new Player("Sakib", 28, "Bangladesh");
 console.log(mashrafi);
 mashrafi.play();
 
-const players:Player[] = [];
+const players: Player[] = [];
 players.push(sakib, mashrafi);
 console.log(players);
+
+import Student from "../output/student.js";
+
+const Kishor = new Student("Kishor", 101, 1703053);
+console.log(Kishor);
+Kishor.read();
+
+const paroi = new Student("Paroi", 102, 1703054);
+console.log(paroi);
+
+const students: Student[] = [];
+students.push(paroi, Kishor);
+students.push('1000');
+console.log(students);
+
+let x = 100;
+console.log(x);
