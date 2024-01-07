@@ -9,4 +9,5 @@ class Student{
       console.log(`${this.name} whose roll is ${this.roll} got id number ${this.id}`);
     }
   }
-  
+
+  export default Student;

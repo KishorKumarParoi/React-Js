@@ -58,6 +58,8 @@ console.log(
 
 // class
 
+import { Playerr } from "../output/classes/Player.js";
+import { isPlayer } from "../output/interfaces/isPlayer.js";
 class Player {
   name: string;
   age: number;
@@ -101,3 +103,34 @@ console.log(students);
 
 let x = 100;
 console.log(x);
+
+
+interface RectangleOptions {
+  width : number,
+  height : number,
+  kkp : number,
+}
+
+function drawRectangle(options : RectangleOptions){
+  let width = options.width;
+  let height = options.height;
+  let thickness = options.kkp;
+
+  console.log('Area : ', width * height);
+  console.log(`thicknesss is ${thickness}`);
+}
+
+let threeDoptions = {
+  width : 30,
+  height : 20,
+  kkp : 30,
+}
+
+drawRectangle(threeDoptions);
+
+
+let paro : isPlayer;
+paro = new Playerr('Paro', 24, 'kishor', "Bangladesh");
+
+console.log(paro);
+console.log(paro.getProperty());
