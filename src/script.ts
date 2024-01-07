@@ -165,7 +165,7 @@ enum RType {
   FAILURE,
   UNAUTHENTICATED,
   FORBIDDEN,
-  ERROR
+  ERROR,
 }
 interface APIresponse<T> {
   status: number;
@@ -182,5 +182,19 @@ const response1: APIresponse<object> = {
   },
 };
 
-
 console.log(response1);
+
+let arr = [3, "heelo", { p: 4 }];
+arr[0] = "kihsor";
+console.log(arr);
+
+// tuples
+let b: [number, string, stringOrNumber, object, boolean] = [
+  100,
+  "kkp",
+  199,
+  { name: "Kishor" },
+  true
+];
+
+console.log(b);
