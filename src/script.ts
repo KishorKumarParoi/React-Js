@@ -5,6 +5,7 @@ console.log(country);
 const kishor = () => {
   console.log("Hello Async Function");
 };
+console.log("🚀 ~ file: script.ts:6 ~ kishor ~ kishor:", kishor);
 
 type stringOrNumber = string | number;
 type userType = {
@@ -18,6 +19,10 @@ const userDetails = (id: stringOrNumber, user: userType) => {
   );
 };
 
+console.log(
+  "🚀 ~ file: script.ts:17 ~ userDetails ~ userDetails :",
+  userDetails
+);
 const sayHello = (user: userType) => {
   console.log(`Hello (${user.age} > 50 ? "Sir" : "Mr.) ${user.name}`);
 };
@@ -194,7 +199,7 @@ let b: [number, string, stringOrNumber, object, boolean] = [
   "kkp",
   199,
   { name: "Kishor" },
-  true
+  true,
 ];
 
 console.log(b);
