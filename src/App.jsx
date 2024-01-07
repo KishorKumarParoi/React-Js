@@ -3,7 +3,6 @@ import Form from "./components/Form.jsx";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Todo from "./components/Todo.jsx";
-import Footer from "./components/footer.jsx"
 import Menu from "./Menu.jsx";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import UseEffect from './components/useEffect';
@@ -12,6 +11,7 @@ import Random from "./components/Random.jsx";
 import TailwindCSS from "./components/TailwindCSS.jsx";
 import Button from "./components/button.jsx";
 import ContactForm from "./components/ContactForm.jsx";
+import Footer from './components/Footer.jsx';
 
 const App = () => {
   let personObj = {
