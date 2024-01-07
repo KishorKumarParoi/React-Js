@@ -160,15 +160,22 @@ let user = addId({
 console.log(`user-id is ${user.id}`);
 console.log(user.country);
 
+enum RType {
+  SUCCESS,
+  FAILURE,
+  UNAUTHENTICATED,
+  FORBIDDEN,
+  ERROR
+}
 interface APIresponse<T> {
   status: number;
-  type: string;
+  type: RType;
   data: T;
 }
 
 const response1: APIresponse<object> = {
   status: 200,
-  type: "good",
+  type: RType.FORBIDDEN,
   data: {
     name: "Kishor Kumar Paroi",
     something: 400,
