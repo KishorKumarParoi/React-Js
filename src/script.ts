@@ -98,39 +98,82 @@ console.log(paroi);
 
 const students: Student[] = [];
 students.push(paroi, Kishor);
-students.push('1000');
+students.push("1000");
 console.log(students);
 
 let x = 100;
 console.log(x);
 
-
 interface RectangleOptions {
-  width : number,
-  height : number,
-  kkp : number,
+  width: number;
+  height: number;
+  kkp: number;
 }
 
-function drawRectangle(options : RectangleOptions){
+function drawRectangle(options: RectangleOptions) {
   let width = options.width;
   let height = options.height;
   let thickness = options.kkp;
 
-  console.log('Area : ', width * height);
+  console.log("Area : ", width * height);
   console.log(`thicknesss is ${thickness}`);
 }
 
 let threeDoptions = {
-  width : 30,
-  height : 20,
-  kkp : 30,
-}
+  width: 30,
+  height: 20,
+  kkp: 30,
+};
 
 drawRectangle(threeDoptions);
 
-
-let paro : isPlayer;
-paro = new Playerr('Paro', 24, 'kishor', "Bangladesh");
+let paro: isPlayer;
+paro = new Playerr("Paro", 24, "kishor", "Bangladesh");
 
 console.log(paro);
+console.log("kishorfdsff");
 console.log(paro.getProperty());
+
+// Generics
+
+const addId = <
+  T extends {
+    name: string;
+    age: number;
+  }
+>(
+  obj: T
+) => {
+  let id = Math.floor(Math.random() * 1000000);
+  return { ...obj, id };
+};
+
+let user = addId({
+  name: "Kishor",
+  age: 24,
+  country: "Bangladesh",
+});
+
+// let user = "fdsfsgg";
+// addId(user);
+
+console.log(`user-id is ${user.id}`);
+console.log(user.country);
+
+interface APIresponse<T> {
+  status: number;
+  type: string;
+  data: T;
+}
+
+const response1: APIresponse<object> = {
+  status: 200,
+  type: "good",
+  data: {
+    name: "Kishor Kumar Paroi",
+    something: 400,
+  },
+};
+
+
+console.log(response1);
