@@ -203,3 +203,6 @@ let b: [number, string, stringOrNumber, object, boolean] = [
 ];
 
 console.log(b);
+
+let name = "Kishor";
+console.log("🚀 ~ file: script.ts:208 ~ name:", name);
