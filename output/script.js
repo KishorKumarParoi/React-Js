@@ -12,9 +12,7 @@ console.log("🚀 ~ file: script.ts:17 ~ userDetails ~ userDetails :", userDetai
 const sayHello = (user) => {
     console.log(`Hello (${user.age} > 50 ? "Sir" : "Mr.) ${user.name}`);
 };
-
-console.log("🚀 ~ file: script.js:13 ~ sayHello ~ sayHello:", sayHello);
-
+console.log("🚀 ~ sayHello ~ sayHello:", sayHello);
 // Function Signature
 let add;
 add = (a, b) => {
@@ -31,17 +29,6 @@ calculation = (a, b, c) => {
     }
 };
 console.log(calculation(5, 60, "add"));
-let userInfo;
-userInfo = (id, userInfo) => {
-    let idUserInfo = id + userInfo;
-    console.log("🚀 ~ file: script.js:37 ~ idUserInfo:", idUserInfo)
-    
-    return 10 + 20;
-};
-console.log(userInfo(12, {
-    name: "Kishor",
-    age: 24,
-}));
 // class
 import { Playerr } from "../output/classes/Player.js";
 class Player {
@@ -134,3 +121,6 @@ let b = [
     true,
 ];
 console.log(b);
+let name = "Kishor";
+console.log("🚀 ~ file: script.ts:208 ~ name:", name);
+console.log('Kishor Kumar Paroi');

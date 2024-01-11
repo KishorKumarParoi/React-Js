@@ -27,6 +27,7 @@ const sayHello = (user: userType) => {
   console.log(`Hello (${user.age} > 50 ? "Sir" : "Mr.) ${user.name}`);
 };
 
+console.log("🚀 ~ sayHello ~ sayHello:", sayHello);
 // Function Signature
 
 let add: (a: number, b: number) => number;
@@ -47,19 +48,6 @@ calculation = (a: number, b: number, c: string) => {
 };
 
 console.log(calculation(5, 60, "add"));
-
-let userInfo: (id: stringOrNumber, userInfo: userType) => number;
-
-userInfo = (id: stringOrNumber, userInfo: userType) => {
-  return 10 + 20;
-};
-
-console.log(
-  userInfo(12, {
-    name: "Kishor",
-    age: 24,
-  })
-);
 
 // class
 
@@ -206,3 +194,4 @@ console.log(b);
 
 let name = "Kishor";
 console.log("🚀 ~ file: script.ts:208 ~ name:", name);
+console.log('Kishor Kumar Paroi');
