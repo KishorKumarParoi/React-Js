@@ -699,6 +699,10 @@ h1 {
   --tw-ring-color: rgb(12 74 110 / var(--tw-ring-opacity));
 }
 
+.static {
+  position: static;
+}
+
 .m-10 {
   margin: 2.5rem;
 }
